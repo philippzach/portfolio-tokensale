@@ -7,6 +7,7 @@ import Why from "../components/why"
 import What from "../components/what"
 import Dashboard from "../components/dashboard"
 import Timeline from "../components/timeline"
+import Team from "../components/team"
 
 const IndexPage = () => (
   <Layout>
@@ -15,6 +16,7 @@ const IndexPage = () => (
     <What />
     <Dashboard />
     <Timeline />
+    <Team />
   </Layout>
 )
 
