@@ -30,19 +30,36 @@ const Flex = styled.div`
 `
 const FiftyLeft = styled.div`
   width: 50%;
+  @media (max-width: 619px) {
+    display: none;
+  }
 `
 const FiftyRight = styled.div`
   width: 50%;
+  @media (max-width: 619px) {
+    width: 100%;
+    padding: 0 2em;
+  }
 `
 const Headline = styled.h3`
   text-align: center;
-  margin-top: -9px;
+  padding: 2em 2em 1em 2em;
 `
 const TenPercent = styled.div`
   width: 15%;
 `
 const Ninety = styled.div`
   width: 85%;
+  @media (max-width: 619px) {
+    padding-left: 0.9em;
+  }
+`
+const ImageSmall = styled.img`
+  padding-right: 1.5em;
+  padding-bottom: 1.5em;
+  @media (min-width: 620px) {
+    display: none;
+  }
 `
 
 const Dashboard = () => (
@@ -60,6 +77,7 @@ const Dashboard = () => (
             bietet völlige Transparenz und es dient als Steuerzentrale für eine
             Vielzahl an Aktivitäten.
           </p>
+          <ImageSmall src={Dash} />
           <Flex>
             <TenPercent>
               <img src={Icon1} />

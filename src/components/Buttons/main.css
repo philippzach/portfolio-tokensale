@@ -1,0 +1,25 @@
+.mainbutton {
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 5px;
+  background-color: #3ac09a;
+  padding: 1em;
+}
+
+.mainbutton:hover {
+  background-color: rgba(58, 192, 154, 0.75);
+}
+.secondary {
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 5px;
+  background-color: #2d967a;
+  padding: 1em;
+}
+.secondary:hover {
+  background-color: rgba(45, 150, 122, 0.75);
+}

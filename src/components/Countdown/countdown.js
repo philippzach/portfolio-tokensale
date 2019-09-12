@@ -6,16 +6,14 @@ import "./index.css"
 
 import { Link } from "gatsby"
 import Countdown from "react-countdown-now"
-import Container from "../Container/container"
+//import Container from "../Container/container"
 import "react-step-progress-bar/styles.css"
 import { ProgressBar, Step } from "react-step-progress-bar"
 
 const Timer = styled.div`
   font-weight: bold;
-  color: #373736;
-  display: flex;
-  justify-content: center;
-  padding: 0.5em 0 0.5em;
+  color: black;
+
   @media (max-width: 700px) {
     font-size: 2em;
   }
@@ -24,7 +22,9 @@ const Timer = styled.div`
   }
 `
 const Units = styled.span`
-  font-size: 0.5em;
+  font-size: 0.25em;
+  text-transform: uppercase;
+  color: black;
   padding-top: 0.25em;
   font-weight: 100;
 `
@@ -33,10 +33,22 @@ const UnitContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-right: 0.5em;
+  margin-right: 0.5em;
+`
+const NumberContainer = styled.div`
+  padding: 0.5em 0.25em 0.2em 0.25em;
+  background-color: white;
+  border: white solid 1px;
+  border-radius: 4px;
+`
+const ItemContainer = styled.div`
+  color: white;
 `
 const CountdownContainer = styled.div`
   display: flex;
+  @media (max-width: 619px) {
+    justify-content: center;
+  }
 `
 // Completion component
 const Completionist = () => (
@@ -53,20 +65,36 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
     return (
       <CountdownContainer>
         <UnitContainer>
-          <UnitsCount>{days}</UnitsCount>
-          <Units>Days</Units>
+          <NumberContainer>
+            <UnitsCount>{days}</UnitsCount>
+          </NumberContainer>
+          <ItemContainer>
+            <Units>Days</Units>
+          </ItemContainer>
         </UnitContainer>
         <UnitContainer>
-          <UnitsCount>{hours}</UnitsCount>
-          <Units>Hours</Units>
+          <NumberContainer>
+            <UnitsCount>{hours}</UnitsCount>
+          </NumberContainer>
+          <ItemContainer>
+            <Units>Hours</Units>
+          </ItemContainer>
         </UnitContainer>
         <UnitContainer>
-          <UnitsCount>{minutes}</UnitsCount>
-          <Units>Minutes</Units>
+          <NumberContainer>
+            <UnitsCount>{minutes}</UnitsCount>
+          </NumberContainer>
+          <ItemContainer>
+            <Units>Minutes</Units>
+          </ItemContainer>
         </UnitContainer>
         <UnitContainer>
-          <UnitsCount>{seconds}</UnitsCount>
-          <Units>Seconds</Units>
+          <NumberContainer>
+            <UnitsCount>{seconds}</UnitsCount>
+          </NumberContainer>
+          <ItemContainer>
+            <Units>Seconds</Units>
+          </ItemContainer>
         </UnitContainer>
       </CountdownContainer>
     )
@@ -90,11 +118,9 @@ const SetCountdown = () => {
 
 const CountdownSection = ({ button }) => (
   <section>
-    <Container>
-      <Timer>
-        <Countdown date={SetCountdown()} renderer={renderer} />
-      </Timer>
-    </Container>
+    <Timer>
+      <Countdown date={SetCountdown()} renderer={renderer} />
+    </Timer>
   </section>
 )
 

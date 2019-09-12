@@ -37,6 +37,13 @@
   font-style: normal;
   font-display: fallback;
 }
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("../fonts/SofiaProLight.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: fallback;
+}
 
 html {
   -ms-text-size-adjust: 100%;

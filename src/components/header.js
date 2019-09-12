@@ -3,6 +3,9 @@ import styled from "@emotion/styled"
 import Countdown from "../components/Countdown/countdown"
 import Line from "../images/line.svg"
 import LPIcon from "../images/lpicon.svg"
+import Payment from "../images/payment.svg"
+import { css, jsx } from "@emotion/core"
+import "../components/Buttons/main.css"
 
 const Background = styled.div`
   background-color: #4adeb5;
@@ -16,35 +19,84 @@ const BottomLine = styled.img`
   }
 `
 const LightText = styled.span`
-  font-weight: 100;
+  font-weight: 200;
 `
 const FiftyLeft = styled.div`
   width: 50%;
+  color: white;
+  margin: auto 0;
+  padding-left: 1.5em;
+  @media (max-width: 619px) {
+    width: 100%;
+  }
 `
 const FiftyRight = styled.div`
   width: 50%;
+  @media (max-width: 619px) {
+    display: none;
+  }
+`
+const ImageSmall = styled.img`
+  padding-right: 1.5em;
+  padding-bottom: 1.5em;
+  @media (min-width: 620px) {
+    display: none;
+  }
+`
+const ImageBig = styled.img``
+const Discount = styled.p`
+  margin-bottom: 1rem;
+  font-size: 1.5em;
+`
+const ButtonContainer = styled.div`
+  margin: 2em 0;
+`
+const Headline = styled.h1`
+  padding-top: 1em;
+  padding-right: 1.5em;
+`
+const SubHeading = styled.h2`
+  padding-right: 1.5em;
+  font-weight: 600;
+  font-size: 24px;
+`
+const MobileCenter = styled.div`
+  @media (max-width: 619px) {
+    text-align: center;
+    padding-bottom: 2em;
+  }
 `
 
 const Header = () => (
   <header style={{ width: "100%" }}>
     <Background>
       <FiftyLeft>
-        <h1>
+        <Headline>
           <strong>Eloop One</strong> -{" "}
           <LightText>Ein Token für grüne Mobilität in deiner Stadt</LightText>
-        </h1>
-        <h2>
+        </Headline>
+        <ImageSmall src={LPIcon} />
+        <SubHeading>
           Der Eloop One ist der erste Token weltweit, mitdem du dich an einer
           E-Carsharing-Flotte beteiligen kannst und an den Fahrtumsätzen
           mitverdienst.
-        </h2>
-        <p>10% Discount sichern noch:</p>
-        <Countdown />
-        <button>Token kaufen</button>
-        <button>Dokumente</button>
+        </SubHeading>
+        <MobileCenter>
+          <Discount>10% Discount sichern noch:</Discount>
+          <Countdown />
+          <ButtonContainer>
+            <a style={{ marginRight: "1.5em" }} className="mainbutton" href="/">
+              Token kaufen
+            </a>
+            <a className="secondary" href="/">
+              Dokumente
+            </a>
+          </ButtonContainer>
+          <img src={Payment} />
+        </MobileCenter>
       </FiftyLeft>
       <FiftyRight>
-        <img src={LPIcon} />
+        <ImageBig src={LPIcon} />
       </FiftyRight>
     </Background>
     <BottomLine src={Line} />

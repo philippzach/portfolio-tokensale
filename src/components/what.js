@@ -5,31 +5,61 @@ import Icon5 from "../images/icon5.svg"
 
 const Headline = styled.h3`
   text-align: center;
+  margin: 2em 0;
+  padding: 0 2em;
 `
 const Section = styled.div`
   display: flex;
 `
 const FiftyLeft = styled.div`
   width: 50%;
+  @media (max-width: 619px) {
+    width: 100%;
+    padding: 0 2em;
+  }
 `
 const FiftyRight = styled.div`
   width: 50%;
+  @media (max-width: 619px) {
+    display: none;
+  }
+`
+const FirstFiftyLeft = styled.div`
+  width: 50%;
+  @media (max-width: 619px) {
+    display: none;
+  }
+`
+const FirstFiftyRight = styled.div`
+  width: 50%;
+  @media (max-width: 619px) {
+    width: 100%;
+    padding: 0 2em;
+  }
+`
+const ImageSmall = styled.img`
+  padding-right: 1.5em;
+  padding-bottom: 1.5em;
+  @media (min-width: 620px) {
+    display: none;
+  }
 `
 
 const What = () => (
   <>
     <Headline>Was macht den Token besonders?</Headline>
     <Section>
-      <FiftyLeft>
+      <FirstFiftyLeft>
         <img src={Icon4} />
-      </FiftyLeft>
-      <FiftyRight>
+      </FirstFiftyLeft>
+      <FirstFiftyRight>
         <h4>Echtes Sharing</h4>
         <p>
           Viele Carsharing-Anbieter sind nicht mehr als eine app-basierte
           Autovermietung. Mit dem Eloop One kann sich jeder in die
           Wertschöpfungskette einreihen und finanziell davon profitieren.
         </p>
+        <ImageSmall src={Icon4} />
         <h4>Asset Tokenization</h4>
         <p>
           Für den Eloop One wurde ein bestehendes Asset, nämlich ein Teil
@@ -37,17 +67,18 @@ const What = () => (
           in Wien im Einsatz und erzielen laufend Umsätze. Dadurch ergibt sich
           eine einzigartige Form der Beteiligung.
         </p>
-      </FiftyRight>
+      </FirstFiftyRight>
     </Section>
     <Section>
       <FiftyLeft>
-        <h4>Trage zum Wachstum bei</h4>
+        <Headline>Trage zum Wachstum bei!</Headline>
         <p>
           Jeder verkaufte Token dient dazu, die Flotte zu vergrößern. Dank der
           Netzwerk-Effekte beim Carsharing, trägt jedes weitere Auto dazu bei,
           den Umsatz jedes einzelnen Autos zu erhöhen. Außderm lässt sich somit
           eine flächendeckende Verfügbarkeit gewährleisten.
         </p>
+        <ImageSmall src={Icon5} />
         <p>
           Die Bevökerung bestimmt somit durch die Nachfrage die Flottengröße.
           Das ist weltweit die erste Bürgerbeteiligung dieser Art im

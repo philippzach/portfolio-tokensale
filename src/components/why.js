@@ -7,12 +7,17 @@ import Icon3 from "../images/icon3.svg"
 const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  @media (max-width: 619px) {
+    grid-template-columns: 1fr;
+    padding: 0 2em;
+  }
 `
 const Box = styled.div`
   text-align: center;
 `
 const Headline = styled.h3`
   text-align: center;
+  padding: 2em 2em 0 2em;
 `
 
 const Why = () => (
