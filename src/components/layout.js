@@ -30,11 +30,6 @@ const Layout = ({ children }) => {
       <Header />
       <div>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}
-          {` `}
-          <a href="https://www.eloop.to">Caroo Mobility Gmbh</a>
-        </footer>
       </div>
     </>
   )

@@ -10,6 +10,13 @@ import "../components/Buttons/main.css"
 const Background = styled.div`
   background-color: #4adeb5;
   display: flex;
+  padding: 0% 6%;
+  @media (min-width: 1800px) {
+    padding: 0 16%;
+  }
+  @media (min-width: 2200px) {
+    padding: 0 20%;
+  }
 `
 const BottomLine = styled.img`
   width: 100%;
@@ -32,6 +39,7 @@ const FiftyLeft = styled.div`
 `
 const FiftyRight = styled.div`
   width: 50%;
+  margin: auto 0;
   @media (max-width: 619px) {
     display: none;
   }

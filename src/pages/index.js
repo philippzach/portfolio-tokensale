@@ -8,15 +8,22 @@ import What from "../components/what"
 import Dashboard from "../components/dashboard"
 import Timeline from "../components/timeline"
 import Team from "../components/team"
+import Container from "../components/Container/containerfaq"
+import Footer from "../components/Footer/footer"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="ELOOP ONE Token" />
-    <Why />
-    <What />
+    <Container>
+      <Why />
+      <What />
+    </Container>
     <Dashboard />
     <Timeline />
     <Team />
+    <Container>
+      <Footer />
+    </Container>
   </Layout>
 )
 

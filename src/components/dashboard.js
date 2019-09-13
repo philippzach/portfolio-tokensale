@@ -24,12 +24,20 @@ const LineBottom = styled.img`
 `
 const Container = styled.div`
   background-color: #4adeb5;
+  padding: 0% 6%;
+  @media (min-width: 1800px) {
+    padding: 0 16%;
+  }
+  @media (min-width: 2200px) {
+    padding: 0 20%;
+  }
 `
 const Flex = styled.div`
   display: flex;
 `
 const FiftyLeft = styled.div`
   width: 50%;
+  padding-right: 1em;
   @media (max-width: 619px) {
     display: none;
   }
