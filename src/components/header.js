@@ -96,7 +96,7 @@ const Header = () => (
             <a style={{ marginRight: "1.5em" }} className="mainbutton" href="/">
               Token kaufen
             </a>
-            <a className="secondary" href="/">
+            <a className="secondary" href="/documents">
               Dokumente
             </a>
           </ButtonContainer>
@@ -107,7 +107,17 @@ const Header = () => (
         <ImageBig src={LPIcon} />
       </FiftyRight>
     </Background>
-    <BottomLine src={Line} />
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 240"
+      style={{ marginTop: "-2px" }}
+    >
+      <path
+        fill="#4adeb5"
+        fill-opacity="1"
+        d="M0,224L60,197.3C120,171,240,117,360,117.3C480,117,600,171,720,181.3C840,192,960,160,1080,149.3C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+      ></path>
+    </svg>
   </header>
 )
 

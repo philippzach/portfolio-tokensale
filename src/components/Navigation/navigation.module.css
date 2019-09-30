@@ -9,7 +9,7 @@
 .navbar {
   display: flex;
   position: relative;
-  padding: 15px 7%;
+  padding: 25px 7%;
   /* background-color: #e3e3e3; */
   border-bottom: 1px solid #d8d8d8;
   box-shadow: 0 0 10px rgba(100, 100, 100, 0.3);

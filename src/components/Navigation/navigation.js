@@ -39,7 +39,7 @@ class Navigation extends Component {
               <Link
                 id="menu-faq"
                 className={styles.links}
-                to="/de/aboutus"
+                to="/somewhere"
                 activeClassName={styles.activenav}
               >
                 <span className={styles.spanner}>Unsere Vision</span>
@@ -47,23 +47,25 @@ class Navigation extends Component {
             </li>
             <li className={styles.navlink}>
               <Link
-                id="menu-faq"
+                id="menu-contact"
                 className={styles.links}
-                to="/de/pricing"
+                to="/documents"
                 activeClassName={styles.activenav}
+                getProps={({ isPartiallyCurrent }) =>
+                  isPartiallyCurrent ? { className: "activenav links" } : null
+                }
               >
-                <span className={styles.spanner}>Tarife</span>
+                <span className={styles.spanner}>Dokumente</span>
               </Link>
             </li>
             <li className={styles.navlink}>
-              <Link
-                id="menu-contact"
-                className={styles.links}
-                to="/de/contact"
-                activeClassName={styles.activenav}
+              <a
+                style={{ marginRight: "1.5em" }}
+                className="mainbutton"
+                href="/"
               >
-                <span className={styles.spanner}>Kontakt</span>
-              </Link>
+                Token kaufen
+              </a>
             </li>
             <li className={styles.navlink}>
               <Link
@@ -72,22 +74,10 @@ class Navigation extends Component {
                 to="/de/frequently-asked-questions"
                 activeClassName={styles.activenav}
               >
-                <span className={styles.spanner}>FAQ</span>
+                <span className={styles.spanner}>Login</span>
               </Link>
             </li>
-            <li className={styles.navlink}>
-              <Link
-                id="menu-contact"
-                className={styles.links}
-                to="/de/blog"
-                activeClassName={styles.activenav}
-                getProps={({ isPartiallyCurrent }) =>
-                  isPartiallyCurrent ? { className: "activenav links" } : null
-                }
-              >
-                <span className={styles.spanner}>Blog</span>
-              </Link>
-            </li>
+
             <div className="sl-nav">
               <ul>
                 <li>

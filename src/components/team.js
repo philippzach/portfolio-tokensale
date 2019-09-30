@@ -98,84 +98,97 @@ const Image = styled.img`
 `
 
 const TeamSection = () => (
-  <Background>
-    <Container>
-      <Row>
-        <Item>
-          <Image src={Leroy} alt="" />
-          <Link href="https://www.Linkin.com/in/leroy-hofer-5b896913b/">
-            <Scope>CEO/Co-Founder</Scope>
-            <Name>Leroy Hofer {Linkedin}</Name>
-          </Link>
-        </Item>
-        <Item>
-          <Image src={Nico} alt="" />
-          <Link href="https://www.linkedin.com/in/nico-prugger-62796913b/">
-            <Scope>CEO/Co-Founder</Scope>
-            <Name>Nico Prugger {Linkedin}</Name>
-          </Link>
-        </Item>
-        <Item>
-          <Image src={Fredi} alt="" />
-          <Link href="https://www.linkedin.com/in/frederic-nachbauer/">
-            <Scope>CTO/Co-Founder</Scope>
-            <Name>Frederic Nachbauer {Linkedin}</Name>
-          </Link>
-        </Item>
-        <Item>
-          <Image src={Max} alt="" />
-          <Link href="https://www.linkedin.com/in/maximilian-schalkhammer-0b4528127/">
-            <Scope>Fleet Manager</Scope>
-            <Name>Max Schalkhammer {Linkedin}</Name>
-          </Link>
-        </Item>
-        <Item>
-          <Image src={Philipp} alt="" />
-          <Link href="https://www.linkedin.com/in/philipp-zach-078059120/">
-            <Scope>Head of Growth Marketing & Hax0r</Scope>
-            <Name>Philipp Zach {Linkedin}</Name>
-          </Link>
-        </Item>
-        <Item>
-          <Image src={Hazem} alt="" />
-          <Scope>Logistics/Operations</Scope>
-          <Name>Hazem Kasabji</Name>
-        </Item>
+  <>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 320"
+      style={{ marginBottom: "-10px" }}
+    >
+      <path
+        fill="#4adeb5"
+        fill-opacity="1"
+        d="M0,224L120,197.3C240,171,480,117,720,112C960,107,1200,149,1320,170.7L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
+      ></path>
+    </svg>
+    <Background>
+      <Container>
+        <Row>
+          <Item>
+            <Image src={Leroy} alt="" />
+            <Link href="https://www.Linkin.com/in/leroy-hofer-5b896913b/">
+              <Scope>CEO/Co-Founder</Scope>
+              <Name>Leroy Hofer {Linkedin}</Name>
+            </Link>
+          </Item>
+          <Item>
+            <Image src={Nico} alt="" />
+            <Link href="https://www.linkedin.com/in/nico-prugger-62796913b/">
+              <Scope>CEO/Co-Founder</Scope>
+              <Name>Nico Prugger {Linkedin}</Name>
+            </Link>
+          </Item>
+          <Item>
+            <Image src={Fredi} alt="" />
+            <Link href="https://www.linkedin.com/in/frederic-nachbauer/">
+              <Scope>CTO/Co-Founder</Scope>
+              <Name>Frederic Nachbauer {Linkedin}</Name>
+            </Link>
+          </Item>
+          <Item>
+            <Image src={Max} alt="" />
+            <Link href="https://www.linkedin.com/in/maximilian-schalkhammer-0b4528127/">
+              <Scope>Fleet Manager</Scope>
+              <Name>Max Schalkhammer {Linkedin}</Name>
+            </Link>
+          </Item>
+          <Item>
+            <Image src={Philipp} alt="" />
+            <Link href="https://www.linkedin.com/in/philipp-zach-078059120/">
+              <Scope>Head of Growth Marketing & Hax0r</Scope>
+              <Name>Philipp Zach {Linkedin}</Name>
+            </Link>
+          </Item>
+          <Item>
+            <Image src={Hazem} alt="" />
+            <Scope>Logistics/Operations</Scope>
+            <Name>Hazem Kasabji</Name>
+          </Item>
 
-        <Item>
-          <Image src={Elias} alt="" />
-          <Link href="https://www.linkedin.com/in/oender/">
-            <Scope>Marketing Advisor & Co-Founder</Scope>
-            <Name>Elias Önder {Linkedin}</Name>
-          </Link>
-        </Item>
-        <Item>
-          <Image src={Kathi} alt="" />
-          <Link href="https://www.linkedin.com/in/katharinalutter/">
-            <Scope>Brand Advisor</Scope>
-            <Name>Katharina Lutter {Linkedin}</Name>
-          </Link>
-        </Item>
-        <Item>
-          <Image src={Andreas} alt="" />
-          <Link href="https://www.linkedin.com/in/andreas-ivanschitz-306736122/">
-            <Scope>Partner/Ambassador</Scope>
-            <Name>Andreas Ivanschitz {Linkedin}</Name>
-          </Link>
-        </Item>
-        <Item>
-          <Image src={Heinz} alt="" />
-          <Scope>Partner/Advisor</Scope>
-          <Name>Heinz Weber</Name>
-        </Item>
-        <Item>
-          <Image src={Werner} alt="" />
-          <Scope>Partner</Scope>
-          <Name>Werner Egger</Name>
-        </Item>
-      </Row>
-    </Container>
-  </Background>
+          <Item>
+            <Image src={Elias} alt="" />
+            <Link href="https://www.linkedin.com/in/oender/">
+              <Scope>Marketing Advisor & Co-Founder</Scope>
+              <Name>Elias Önder {Linkedin}</Name>
+            </Link>
+          </Item>
+          <Item>
+            <Image src={Kathi} alt="" />
+            <Link href="https://www.linkedin.com/in/katharinalutter/">
+              <Scope>Brand Advisor</Scope>
+              <Name>Katharina Lutter {Linkedin}</Name>
+            </Link>
+          </Item>
+          <Item>
+            <Image src={Andreas} alt="" />
+            <Link href="https://www.linkedin.com/in/andreas-ivanschitz-306736122/">
+              <Scope>Partner/Ambassador</Scope>
+              <Name>Andreas Ivanschitz {Linkedin}</Name>
+            </Link>
+          </Item>
+          <Item>
+            <Image src={Heinz} alt="" />
+            <Scope>Partner/Advisor</Scope>
+            <Name>Heinz Weber</Name>
+          </Item>
+          <Item>
+            <Image src={Werner} alt="" />
+            <Scope>Partner</Scope>
+            <Name>Werner Egger</Name>
+          </Item>
+        </Row>
+      </Container>
+    </Background>
+  </>
 )
 
 export default TeamSection
