@@ -1,4 +1,5 @@
 import React from "react"
+import styled from "@emotion/styled"
 
 import Layout from "../components/layout"
 //import Image from "../components/image"
@@ -12,12 +13,17 @@ import Team from "../components/team"
 import Container from "../components/Container/containerfaq"
 import Footer from "../components/Footer/footer"
 
+const Spacer = styled.div`
+  padding: 2em;
+`
+
 const IndexPage = () => (
   <Layout>
     <SEO title="ELOOP ONE Token" />
     <Header />
     <Container>
       <Why />
+      <Spacer />
       <What />
     </Container>
     <Dashboard />

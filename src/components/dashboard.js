@@ -75,7 +75,7 @@ const Dashboard = () => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1440 280"
-      style={{ marginBottom: "-10px" }}
+      style={{ marginBottom: "-10px", marginTop: "-50px" }}
     >
       <path
         fill="#4adeb5"
@@ -150,7 +150,7 @@ const Dashboard = () => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1440 320"
-      style={{ marginTop: "-2px" }}
+      style={{ marginTop: "-2px", marginBottom: "-50px" }}
     >
       <path
         fill="#4adeb5"

@@ -102,7 +102,7 @@ const TeamSection = () => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1440 320"
-      style={{ marginBottom: "-10px" }}
+      style={{ marginBottom: "-40px" }}
     >
       <path
         fill="#4adeb5"

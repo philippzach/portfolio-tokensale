@@ -13,6 +13,9 @@ const Section = styled.div`
 `
 const FiftyLeft = styled.div`
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   @media (max-width: 619px) {
     width: 100%;
     padding: 0 2em;
@@ -20,18 +23,25 @@ const FiftyLeft = styled.div`
 `
 const FiftyRight = styled.div`
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   @media (max-width: 619px) {
     display: none;
   }
 `
 const FirstFiftyLeft = styled.div`
   width: 50%;
+
   @media (max-width: 619px) {
     display: none;
   }
 `
 const FirstFiftyRight = styled.div`
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   @media (max-width: 619px) {
     width: 100%;
     padding: 0 2em;
@@ -44,6 +54,9 @@ const ImageSmall = styled.img`
     display: none;
   }
 `
+const Spacer = styled.div`
+  padding: 2em;
+`
 
 const What = () => (
   <>
@@ -54,7 +67,7 @@ const What = () => (
       </FirstFiftyLeft>
       <FirstFiftyRight>
         <h4>Echtes Sharing</h4>
-        <p>
+        <p style={{ paddingBottom: "1em" }}>
           Viele Carsharing-Anbieter sind nicht mehr als eine app-basierte
           Autovermietung. Mit dem Eloop One kann sich jeder in die
           Wertschöpfungskette einreihen und finanziell davon profitieren.
@@ -69,6 +82,7 @@ const What = () => (
         </p>
       </FirstFiftyRight>
     </Section>
+    <Spacer />
     <Section>
       <FiftyLeft>
         <Headline>Trage zum Wachstum bei!</Headline>

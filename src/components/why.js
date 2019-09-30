@@ -14,10 +14,20 @@ const Grid = styled.div`
 `
 const Box = styled.div`
   text-align: center;
+  padding: 1.5em;
 `
 const Headline = styled.h3`
   text-align: center;
   padding: 2em 2em 0 2em;
+  margin-bottom: 2em;
+  line-height: 1.5em;
+`
+const Heading = styled.h4`
+  margin-top: 0.75em;
+`
+const Paragraph = styled.p`
+  max-width: 21em;
+  margin: 0 auto;
 `
 
 const Why = () => (
@@ -26,24 +36,26 @@ const Why = () => (
     <Grid>
       <Box>
         <img src={Icon1} />
-        <h4>Verdiene Geld mit jeder Fahrt</h4>
-        <p>Wenn die Eloop-Autos Umsätze erzielen, bekommst du deinen Anteil.</p>
+        <Heading>Verdiene Geld mit jeder Fahrt</Heading>
+        <Paragraph>
+          Wenn die Eloop-Autos Umsätze erzielen, bekommst du deinen Anteil.
+        </Paragraph>
       </Box>
       <Box>
         <img src={Icon2} />
-        <h4>Flexibler Cashout</h4>
-        <p>
+        <Heading>Flexibler Cashout</Heading>
+        <Paragraph>
           Du kannst dir deine Erträge in Euro ausbezahlen lassen oder sie in
           Fahrtguthaben umwandeln.
-        </p>
+        </Paragraph>
       </Box>
       <Box>
         <img src={Icon3} />
-        <h4>Schützt die Umwelt</h4>
-        <p>
+        <Heading>Schützt die Umwelt</Heading>
+        <Paragraph>
           Die verwendeten Autos sind reine E-Autos und geladen wird zu 100% mit
           Ökostrom.
-        </p>
+        </Paragraph>
       </Box>
     </Grid>
   </>
