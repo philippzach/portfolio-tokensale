@@ -10,6 +10,7 @@ import What from "../components/what"
 import Dashboard from "../components/dashboard"
 import Timeline from "../components/timeline"
 import Team from "../components/team"
+import Ablauf from "../components/ablauf"
 import Container from "../components/Container/containerfaq"
 import Footer from "../components/Footer/footer"
 
@@ -26,6 +27,7 @@ const IndexPage = () => (
       <Spacer />
       <What />
     </Container>
+    <Ablauf />
     <Dashboard />
     <Timeline />
     <Team />
