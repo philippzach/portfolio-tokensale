@@ -11,11 +11,15 @@ import Dashboard from "../components/dashboard"
 import Timeline from "../components/timeline"
 import Team from "../components/team"
 import Ablauf from "../components/ablauf"
-import Container from "../components/Container/containerfaq"
+
 import Footer from "../components/Footer/footer"
 
 const Spacer = styled.div`
   padding: 2em;
+`
+const Container = styled.div`
+  max-width: 1030px;
+  margin: 0 auto;
 `
 
 const IndexPage = () => (
@@ -26,10 +30,12 @@ const IndexPage = () => (
       <Why />
       <Spacer />
       <What />
+      <Ablauf />
     </Container>
-    <Ablauf />
     <Dashboard />
-    <Timeline />
+    <Container>
+      <Timeline />
+    </Container>
     <Team />
     <Container>
       <Footer />

@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import styled from "@emotion/styled"
-import Icon from "../images/ablauf.svg"
+import Icon from "../images/ablauf-new.svg"
 
 const Container = styled.div`
   text-align: center;

@@ -100,15 +100,27 @@ const Image = styled.img`
 const TeamSection = () => (
   <>
     <svg
+      width="1440px"
+      height="84px"
+      viewBox="0 0 1440 84"
+      version="1.1"
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1440 320"
-      style={{ marginBottom: "-40px" }}
+      style={{ marginBottom: "-9px" }}
     >
-      <path
-        fill="#4adeb5"
-        fill-opacity="1"
-        d="M0,224L120,197.3C240,171,480,117,720,112C960,107,1200,149,1320,170.7L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
-      ></path>
+      <g
+        id="Page-1"
+        stroke="none"
+        stroke-width="1"
+        fill="none"
+        fill-rule="evenodd"
+      >
+        <g id="team" fill="#4ADEB5" fill-rule="nonzero">
+          <path
+            d="M0,26.0713682 C120.863166,31.4985714 221.294749,25.4455063 301.294749,7.91217295 C421.294749,-18.387827 480,31.0713682 720,26.0713682 C960,21.0713682 1117.06396,-13.787827 1237.06396,7.91217295 C1317.06396,22.3788396 1384.70931,28.4319047 1440,26.0713682 L1440,84 L1320,84 C1200,84 960,84 720,84 C480,84 240,84 120,84 L0,84 L0,26.0713682 Z"
+            id="Path"
+          ></path>
+        </g>
+      </g>
     </svg>
     <Background>
       <Container>

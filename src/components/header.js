@@ -9,14 +9,16 @@ import "../components/Buttons/main.css"
 
 const Background = styled.div`
   background-color: #4adeb5;
+`
+const FlexContainer = styled.div`
   display: flex;
-  padding: 2% 6% 0% 6%;
+  /* padding: 2% 6% 0% 6%;
   @media (min-width: 1800px) {
     padding: 0 16%;
   }
   @media (min-width: 2200px) {
     padding: 0 20%;
-  }
+  } */
 `
 const BottomLine = styled.img`
   width: 100%;
@@ -75,49 +77,68 @@ const MobileCenter = styled.div`
     padding-bottom: 2em;
   }
 `
+const Container = styled.div`
+  max-width: 1030px;
+  margin: 0 auto;
+`
 
 const Header = () => (
   <header style={{ width: "100%" }}>
     <Background>
-      <FiftyLeft>
-        <Headline>
-          <strong>Eloop One</strong> -{" "}
-          <LightText>Ein Token für grüne Mobilität in deiner Stadt</LightText>
-        </Headline>
-        <ImageSmall src={LPIcon} />
-        <SubHeading>
-          Der Eloop One ist der erste Token weltweit, mitdem du dich an einer
-          E-Carsharing-Flotte beteiligen kannst und an den Fahrtumsätzen
-          mitverdienst.
-        </SubHeading>
-        <MobileCenter>
-          <Discount>10% Discount sichern noch:</Discount>
-          <Countdown />
-          <ButtonContainer>
-            <a style={{ marginRight: "1.5em" }} className="mainbutton" href="/">
-              Token kaufen
-            </a>
-            <a className="secondary" href="/documents">
-              Dokumente
-            </a>
-          </ButtonContainer>
-          <img src={Payment} />
-        </MobileCenter>
-      </FiftyLeft>
-      <FiftyRight>
-        <ImageBig src={LPIcon} />
-      </FiftyRight>
+      <Container>
+        <FlexContainer>
+          <FiftyLeft>
+            <Headline>
+              <strong>Eloop One</strong> -{" "}
+              <LightText>
+                Ein Token für grüne Mobilität in deiner Stadt
+              </LightText>
+            </Headline>
+            <ImageSmall src={LPIcon} />
+            <SubHeading>
+              Der Eloop One ist der erste Token weltweit, mitdem du dich an
+              einer E-Carsharing-Flotte beteiligen kannst und an den
+              Fahrtumsätzen mitverdienst.
+            </SubHeading>
+            <MobileCenter>
+              <Discount>10% Discount sichern noch:</Discount>
+              <Countdown />
+              <ButtonContainer>
+                <a
+                  style={{ marginRight: "1.5em" }}
+                  className="mainbutton"
+                  href="/"
+                >
+                  Token kaufen
+                </a>
+                <a className="secondary" href="/documents">
+                  Dokumente
+                </a>
+              </ButtonContainer>
+              <img src={Payment} />
+            </MobileCenter>
+          </FiftyLeft>
+          <FiftyRight>
+            <ImageBig src={LPIcon} />
+          </FiftyRight>
+        </FlexContainer>
+      </Container>
     </Background>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1440 240"
-      style={{ marginTop: "-9px" }}
-    >
-      <path
-        fill="#4adeb5"
-        fillOpacity="1"
-        d="M0,224L60,197.3C120,171,240,117,360,117.3C480,117,600,171,720,181.3C840,192,960,160,1080,149.3C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
-      ></path>
+    <svg width="1450px" height="85px" viewBox="0 0 1450 85" version="1.1">
+      <g
+        id="Page-1"
+        stroke="none"
+        stroke-width="1"
+        fill="none"
+        fill-rule="evenodd"
+      >
+        <g id="header" fill="#4ADEB5" fill-rule="nonzero">
+          <path
+            d="M0,76.750271 C52.9108291,64.2002856 112.84091,57.9252929 179.790242,57.9252929 C280.214239,57.9252929 382.338475,76.4730388 503.171809,76.750271 C624.005142,76.4730388 739.653714,54.2740138 860.487048,63.7923173 C981.320381,73.6802638 1068.74014,73.6802638 1189.57347,63.7923173 C1270.12903,57.4467816 1356.93787,64.4386157 1450,84.7678197 L1450,0 L1389.58333,0 C1329.16667,0 1208.33333,0 1087.5,0 C966.666667,0 845.833333,0 725,0 C604.166667,0 483.333333,0 362.5,0 C241.666667,0 120.833333,0 60.4166667,0 L0,0 L0,76.750271 Z"
+            id="Path"
+          ></path>
+        </g>
+      </g>
     </svg>
   </header>
 )

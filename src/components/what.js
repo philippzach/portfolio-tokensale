@@ -32,7 +32,7 @@ const FiftyRight = styled.div`
 `
 const FirstFiftyLeft = styled.div`
   width: 50%;
-
+  padding-right: 4em;
   @media (max-width: 619px) {
     display: none;
   }
