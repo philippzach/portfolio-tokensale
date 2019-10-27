@@ -14,6 +14,8 @@ import Max from "../images/maxschalkhammer.jpg"
 import Andreas from "../images/andreasivanschitz.jpg"
 import Kathi from "../images/kathi_new.jpg"
 
+import Bg from "../images/bg-ablauf.png"
+
 const Linkedin = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +34,10 @@ const Linkedin = (
 )
 
 const Background = styled.div`
-  background-color: #4adeb5;
+  background-color: #121615;
+  background-image: url(${Bg});
+  background-position: bottom;
+  background-repeat: no-repeat;
 `
 const Row = styled.div`
   display: flex;
@@ -73,18 +78,19 @@ const Item = styled.div`
   }
 `
 const Scope = styled.p`
-  color: #363637;
-  margin-bottom: 0;
-  font-weight: 700;
+  color: white;
+  font-weight: 200;
   text-align: center;
-  font-size: 13px;
+  font-size: 12px;
 `
 const Name = styled.p`
-  color: #363637;
+  color: #4adeb5;
   text-align: center;
-  font-size: 13px;
+  font-size: 18px;
+  font-weight: 800;
   display: inline-flex;
   align-items: center;
+  margin-bottom: 0;
 `
 const Image = styled.img`
   border-radius: 999px;
@@ -96,106 +102,93 @@ const Image = styled.img`
   align-items: center;
   border-radius: 999px;
 `
+const Headline = styled.h2`
+  text-align: center;
+  font-size: 2em;
+  padding: 2em 0 0 0;
+  margin-bottom: 0em;
+  line-height: 1.5em;
+  color: white;
+  text-transform: uppercase;
+`
 
 const TeamSection = () => (
   <>
-    <svg
-      width="1440px"
-      height="84px"
-      viewBox="0 0 1440 84"
-      version="1.1"
-      xmlns="http://www.w3.org/2000/svg"
-      style={{ marginBottom: "-9px" }}
-    >
-      <g
-        id="Page-1"
-        stroke="none"
-        stroke-width="1"
-        fill="none"
-        fill-rule="evenodd"
-      >
-        <g id="team" fill="#4ADEB5" fill-rule="nonzero">
-          <path
-            d="M0,26.0713682 C120.863166,31.4985714 221.294749,25.4455063 301.294749,7.91217295 C421.294749,-18.387827 480,31.0713682 720,26.0713682 C960,21.0713682 1117.06396,-13.787827 1237.06396,7.91217295 C1317.06396,22.3788396 1384.70931,28.4319047 1440,26.0713682 L1440,84 L1320,84 C1200,84 960,84 720,84 C480,84 240,84 120,84 L0,84 L0,26.0713682 Z"
-            id="Path"
-          ></path>
-        </g>
-      </g>
-    </svg>
     <Background>
+      <Headline>Team</Headline>
       <Container>
         <Row>
           <Item>
             <Image src={Leroy} alt="" />
             <Link href="https://www.Linkin.com/in/leroy-hofer-5b896913b/">
-              <Scope>CEO/Co-Founder</Scope>
               <Name>Leroy Hofer {Linkedin}</Name>
+              <Scope>CEO/Co-Founder</Scope>
             </Link>
           </Item>
           <Item>
             <Image src={Nico} alt="" />
             <Link href="https://www.linkedin.com/in/nico-prugger-62796913b/">
-              <Scope>CEO/Co-Founder</Scope>
               <Name>Nico Prugger {Linkedin}</Name>
+              <Scope>CEO/Co-Founder</Scope>
             </Link>
           </Item>
           <Item>
             <Image src={Fredi} alt="" />
             <Link href="https://www.linkedin.com/in/frederic-nachbauer/">
-              <Scope>CTO/Co-Founder</Scope>
               <Name>Frederic Nachbauer {Linkedin}</Name>
+              <Scope>CTO/Co-Founder</Scope>
             </Link>
           </Item>
           <Item>
             <Image src={Max} alt="" />
             <Link href="https://www.linkedin.com/in/maximilian-schalkhammer-0b4528127/">
-              <Scope>Fleet Manager</Scope>
               <Name>Max Schalkhammer {Linkedin}</Name>
+              <Scope>Fleet Manager</Scope>
             </Link>
           </Item>
           <Item>
             <Image src={Philipp} alt="" />
             <Link href="https://www.linkedin.com/in/philipp-zach-078059120/">
-              <Scope>Head of Growth Marketing & Hax0r</Scope>
               <Name>Philipp Zach {Linkedin}</Name>
+              <Scope>Head of Growth Marketing & Hax0r</Scope>
             </Link>
           </Item>
           <Item>
             <Image src={Hazem} alt="" />
-            <Scope>Logistics/Operations</Scope>
             <Name>Hazem Kasabji</Name>
+            <Scope>Logistics/Operations</Scope>
           </Item>
 
           <Item>
             <Image src={Elias} alt="" />
             <Link href="https://www.linkedin.com/in/oender/">
-              <Scope>Marketing Advisor & Co-Founder</Scope>
               <Name>Elias Önder {Linkedin}</Name>
+              <Scope>Marketing Advisor & Co-Founder</Scope>
             </Link>
           </Item>
           <Item>
             <Image src={Kathi} alt="" />
             <Link href="https://www.linkedin.com/in/katharinalutter/">
-              <Scope>Brand Advisor</Scope>
               <Name>Katharina Lutter {Linkedin}</Name>
+              <Scope>Brand Advisor</Scope>
             </Link>
           </Item>
           <Item>
             <Image src={Andreas} alt="" />
             <Link href="https://www.linkedin.com/in/andreas-ivanschitz-306736122/">
-              <Scope>Partner/Ambassador</Scope>
               <Name>Andreas Ivanschitz {Linkedin}</Name>
+              <Scope>Partner/Ambassador</Scope>
             </Link>
           </Item>
           <Item>
             <Image src={Heinz} alt="" />
-            <Scope>Partner/Advisor</Scope>
             <Name>Heinz Weber</Name>
+            <Scope>Partner/Advisor</Scope>
           </Item>
           <Item>
             <Image src={Werner} alt="" />
-            <Scope>Partner</Scope>
             <Name>Werner Egger</Name>
+            <Scope>Partner</Scope>
           </Item>
         </Row>
       </Container>

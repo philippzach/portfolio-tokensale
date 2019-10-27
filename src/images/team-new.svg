@@ -1,8 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="1440px" height="84px" viewBox="0 0 1440 84" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
-    <title>team</title>
-    <desc>Created with Sketch.</desc>
+
+<svg width="1440px" height="84px" viewBox="0 0 1440 84" version="1.1" xmlns="http://www.w3.org/2000/svg" >
+   
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="team" fill="#4ADEB5" fill-rule="nonzero">
             <path d="M0,26.0713682 C120.863166,31.4985714 221.294749,25.4455063 301.294749,7.91217295 C421.294749,-18.387827 480,31.0713682 720,26.0713682 C960,21.0713682 1117.06396,-13.787827 1237.06396,7.91217295 C1317.06396,22.3788396 1384.70931,28.4319047 1440,26.0713682 L1440,84 L1320,84 C1200,84 960,84 720,84 C480,84 240,84 120,84 L0,84 L0,26.0713682 Z" id="Path"></path>

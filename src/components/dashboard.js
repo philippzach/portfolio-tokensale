@@ -4,26 +4,19 @@ import Top from "../images/linetop.svg"
 import Bottom from "../images/line.svg"
 import Dash from "../images/dashboard.svg"
 
+import IconOne from "../images/icontokenone.svg"
 import Icon1 from "../images/dashicon1.svg"
 import Icon2 from "../images/dashicon2.svg"
 import Icon3 from "../images/dashicon3.svg"
 import Icon4 from "../images/dashicon4.svg"
 
-const LineTop = styled.img`
-  margin-bottom: -8px;
-  @media screen and (max-width: 850px) {
-    display: none;
-  }
-`
-const LineBottom = styled.img`
-  width: 100%;
-  margin-top: -3px;
-  @media screen and (max-width: 850px) {
-    display: none;
-  }
-`
+import Bg from "../images/bg-ablauf.png"
+
 const Background = styled.div`
-  background-color: #4adeb5;
+  background-color: #272930;
+  background-image: url(${Bg});
+  background-position: bottom;
+  background-repeat: no-repeat;
 `
 const Flex = styled.div`
   display: flex;
@@ -37,6 +30,7 @@ const FiftyLeft = styled.div`
 `
 const FiftyRight = styled.div`
   width: 50%;
+  padding-left: 4em;
   @media (max-width: 619px) {
     width: 100%;
     padding: 0 2em;
@@ -44,13 +38,24 @@ const FiftyRight = styled.div`
 `
 const Headline = styled.h3`
   text-align: center;
-  padding: 2em 2em 1em 2em;
+  font-size: 2em;
+  padding: 2em 2em 0 2em;
+  margin-bottom: 2em;
+  line-height: 1.5em;
+  color: white;
 `
 const TenPercent = styled.div`
   width: 15%;
 `
 const Ninety = styled.div`
   width: 85%;
+  p {
+    color: white;
+    font-weight: 200;
+    b {
+      color: #4adeb5;
+    }
+  }
   @media (max-width: 619px) {
     padding-left: 0.9em;
   }
@@ -65,21 +70,11 @@ const ImageSmall = styled.img`
 const Container = styled.div`
   max-width: 1030px;
   margin: 0 auto;
+  padding-bottom: 6em;
 `
 
 const Dashboard = () => (
   <>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1440 280"
-      style={{ marginBottom: "-10px", marginTop: "-50px" }}
-    >
-      <path
-        fill="#4adeb5"
-        fill-opacity="1"
-        d="M0,256L60,240C120,224,240,192,360,197.3C480,203,600,245,720,245.3C840,245,960,203,1080,197.3C1200,192,1320,224,1380,240L1440,256L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-      ></path>
-    </svg>
     <Background>
       <Container>
         <Headline>Token Holder Dashboard</Headline>
@@ -88,11 +83,18 @@ const Dashboard = () => (
             <img src={Dash} />
           </FiftyLeft>
           <FiftyRight>
-            <p>
-              Jeder Eloop One Holder hat Zugriff auf das Dashboard. Das
-              Dashboard bietet völlige Transparenz und es dient als
-              Steuerzentrale für eine Vielzahl an Aktivitäten.
-            </p>
+            <Flex>
+              <TenPercent>
+                <img src={IconOne} />
+              </TenPercent>
+              <Ninety>
+                <p>
+                  <b>Jeder Eloop One Holder</b> hat Zugriff auf das Dashboard.
+                  Das Dashboard bietet völlige Transparenz und es dient als
+                  Steuerzentrale für eine Vielzahl an Aktivitäten.
+                </p>
+              </Ninety>
+            </Flex>
             <ImageSmall src={Dash} />
             <Flex>
               <TenPercent>
@@ -100,9 +102,9 @@ const Dashboard = () => (
               </TenPercent>
               <Ninety>
                 <p>
-                  <b>Token:</b> Hier findest du eine Übersicht zum Total Supply,
-                  zu den bereits verkauften Token & wie viel sich momentan in
-                  deinem Besitz befindet.
+                  <b>Tokens:</b> Hier findest du eine Übersicht zum Total
+                  Supply, zu den bereits verkauften Token & wie viel sich
+                  momentan in deinem Besitz befindet.
                 </p>
               </Ninety>
             </Flex>
@@ -124,9 +126,9 @@ const Dashboard = () => (
               </TenPercent>
               <Ninety>
                 <p>
-                  <b>Vehicles:</b> Checke aus welchen Fahrzeugen die
-                  tokenisierte Flotte derzeit besteht. Du kannst dort auch immer
-                  den Status der E-Autos überprüfen.
+                  <b>Vehicle:</b> Checke aus welchen Fahrzeugen die tokenisierte
+                  Flotte derzeit besteht. Du kannst dort auch immer den Status
+                  der E-Autos überprüfen.
                 </p>
               </Ninety>
             </Flex>
@@ -146,17 +148,6 @@ const Dashboard = () => (
         </Flex>
       </Container>
     </Background>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1440 320"
-      style={{ marginTop: "-2px", marginBottom: "-50px" }}
-    >
-      <path
-        fill="#4adeb5"
-        fill-opacity="1"
-        d="M0,128L60,133.3C120,139,240,149,360,154.7C480,160,600,160,720,144C840,128,960,96,1080,96C1200,96,1320,128,1380,144L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
-      ></path>
-    </svg>
   </>
 )
 

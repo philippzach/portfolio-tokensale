@@ -27,6 +27,7 @@ const Units = styled.span`
   color: black;
   padding-top: 0.25em;
   font-weight: 100;
+  color: white;
 `
 const UnitsCount = styled.span``
 const UnitContainer = styled.div`

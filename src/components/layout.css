@@ -623,3 +623,7 @@ pre tt:after {
 .documents {
   transform: scale(0.5);
 }
+.dot-label {
+  font-size: 0.8em !important;
+  color: white;
+}
