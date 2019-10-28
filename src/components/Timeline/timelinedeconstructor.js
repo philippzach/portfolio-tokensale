@@ -17,6 +17,14 @@ const Container = styled.div`
     padding: 3% 20%;
   }
 `
+const Headline = styled.h2`
+  text-align: center;
+  font-size: 2em;
+  padding: 2em 2em 0 2em;
+  margin-bottom: 2em;
+  line-height: 1.5em;
+  color: white;
+`
 
 export default class TimelineDecon extends React.Component {
   constructor(props) {
@@ -42,6 +50,7 @@ export default class TimelineDecon extends React.Component {
     return (
       <Background>
         <Container>
+          <Headline>Timeline</Headline>
           <Timeline content={this.data} />
         </Container>
       </Background>

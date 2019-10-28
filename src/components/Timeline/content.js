@@ -2,61 +2,69 @@ module.exports = [
   {
     date: "08/01/2017",
     title: "Gruendung Gmbh",
-    subtitle: "Arena",
+    subtitle:
+      "Unter dem Namen Caroo. Founder: Leroy Hofer - Nico Prugger - Elias Önder - Frederic Nachbauer",
   },
   {
     date: "11/01/2017",
     title: "Kooperation Wien Energie",
-    subtitle: "Daggerfall",
+    subtitle: "Der Kooperationsvertrag wurde unterzeichnet.",
   },
   {
     date: "05/01/2018",
     title: "Crowdinvesting",
-    subtitle: "Morrowind",
+    subtitle: "220 Personen haben über € 330.000 investiert.",
   },
   {
     date: "08/01/2018",
     title: "Development Start Carsharing",
-    subtitle: "Oblivion",
+    subtitle:
+      "Projektstart: Set-Up Flottenmanagement Software, Entwicklung Apps, Logistikplan, Beschaffung E-Autos...",
   },
   {
     date: "09/01/2018",
     title: "Development Start Eloop One Token",
-    subtitle: "Skyrim",
+    subtitle:
+      "Erstellung der Tokenomics & Token Design, Development Dashboard.",
   },
   {
     date: "10/01/2018",
-    title: "Rebranding",
-    subtitle: "Skyrim",
+    title: "Rebranding der Marke",
+    subtitle:
+      "Namensänderung auf Eloop, Änderung des Logos, Erstellung der neuen Coporate Identity",
   },
   {
     date: "05/01/2019",
     title: "Carsharing Software Live",
-    subtitle: "Skyrim",
+    subtitle:
+      "Die App ist Einsatzbereit und in den Stores. Website ist online. Autos integriert. Betaphase beginnt.",
   },
   {
     date: "08/01/2019",
     title: "Launch Carsharing",
-    subtitle: "Skyrim",
+    subtitle: "E-Carsharing ist live. Umfassende Presse & Marketingbegleitung.",
   },
   {
     date: "10/01/2019",
     title: "Launch Eloop One",
-    subtitle: "Skyrim",
+    subtitle: "Teil der Flotte wurde tokenisiert und Dashboard ist live.",
   },
   {
     date: "03/01/2020",
     title: "Skalierung E-Flotte",
-    subtitle: "Skyrim",
+    subtitle:
+      "Elektrische Transporter werden integriert und Flottengröße wird aufgestockt.",
   },
   {
     date: "06/01/2020",
     title: "Eloop One Boerse",
-    subtitle: "Skyrim",
+    subtitle:
+      "Der Security Token kann an regulären Börsen international gehandelt werden. Dazu wurde ein Prospekt erstellt.",
   },
   {
     date: "01/01/2021",
     title: "Expansion",
-    subtitle: "Skyrim",
+    subtitle:
+      "Sobald Eloop in eine ernstzunehmende Größe hat, wird in weitere Städte expandiert.",
   },
 ]
