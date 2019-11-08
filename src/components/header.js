@@ -10,9 +10,12 @@ import "../components/Buttons/main.css"
 const Background = styled.div`
   background-color: #272930;
   background-image: url(${BgImage});
-  height: 500px;
+
   display: flex;
   align-items: center;
+  @media (min-width: 719px) {
+    height: 500px;
+  }
 `
 const FlexContainer = styled.div`
   display: flex;
@@ -32,6 +35,8 @@ const FiftyLeft = styled.div`
   padding-left: 1.5em;
   @media (max-width: 719px) {
     width: 100%;
+    background-color: #272930;
+    padding-top: 1em;
   }
 `
 const FiftyRight = styled.div`

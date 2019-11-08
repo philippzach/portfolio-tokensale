@@ -27,11 +27,17 @@ const Section = styled.section`
 
 const FiftyImg = styled.div`
   width: 50%;
+  @media (max-width: 650px) {
+    display: none;
+  }
 `
 const FiftyText = styled.div`
   width: 50%;
   background-color: #272930;
   z-index: -1;
+  @media (max-width: 650px) {
+    width: 100%;
+  }
 `
 
 const Headline = styled.h2`

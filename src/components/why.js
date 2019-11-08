@@ -4,10 +4,17 @@ import Icon1 from "../images/icon1.svg"
 import Icon2 from "../images/icon2.svg"
 import Icon3 from "../images/icon3.svg"
 import Bg from "../images/bg-why1.jpg"
+import BgMobile from "../images/bg-why-mobile.jpg"
 
 const Background = styled.div`
-  background-image: url(${Bg});
+  @media (max-width: 650px) {
+    background-image: url(${BgMobile});
+  }
+  @media (min-width: 649px) {
+    background-image: url(${Bg});
+  }
 `
+
 const Container = styled.div`
   max-width: 1030px;
   margin: 0 auto;

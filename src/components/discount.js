@@ -8,6 +8,8 @@ const Background = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 2em 0;
+  @media (max-width: 700px) {
+  }
 `
 
 const Discount = styled.p`

@@ -17,6 +17,20 @@ const Container = styled.div`
     padding: 3% 20%;
   }
 `
+
+const Sub = styled.div`
+  max-width: 35em;
+  margin: 0 auto;
+  h3 {
+    color: white;
+    line-height: 1.5em;
+    font-weight: 400;
+  }
+`
+const Title = styled.h1`
+  color: #3ac09a;
+`
+
 const Headline = styled.h2`
   text-align: center;
   font-size: 2em;
@@ -38,8 +52,10 @@ export default class TimelineDecon extends React.Component {
         date: info.date,
         component: (
           <div className="timeline-container">
-            <h1>{info.title}</h1>
-            <h2>{info.subtitle}</h2>
+            <Title>{info.title}</Title>
+            <Sub>
+              <h3>{info.subtitle}</h3>
+            </Sub>
           </div>
         ),
       }
