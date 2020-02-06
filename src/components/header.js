@@ -1,8 +1,8 @@
 import React from "react"
 import styled from "@emotion/styled"
 import LPIcon from "../images/icon-header.svg"
-import Logo1 from "../images/logo-eloop.svg"
-import Logo2 from "../images/logo-one.svg"
+
+import Logo2 from "../images/eloopone.svg"
 import BgImage from "../images/bg-header1x.png"
 import { css, jsx } from "@emotion/core"
 import "../components/Buttons/main.css"
@@ -85,8 +85,11 @@ const Header = () => (
       <Container>
         <FlexContainer>
           <FiftyLeft>
-            <img src={Logo1} alt="" style={{ paddingRight: "1em" }} />
-            <img src={Logo2} alt="" />
+            <img
+              src={Logo2}
+              alt=""
+              style={{ paddingRight: "10px", maxWidth: "350px" }}
+            />
             <Headline>Ein Token für grüne Mobilität in deiner Stadt</Headline>
             <ImageSmall src={LPIcon} />
             <SubHeading>
@@ -104,7 +107,7 @@ const Header = () => (
                   Token kaufen
                 </a>
                 <a className="secondary" href="/documents">
-                  Dokumente
+                  Whitepaper
                 </a>
               </ButtonContainer>
             </MobileCenter>

@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import styled from "@emotion/styled"
 import Countdown from "../components/Countdown/countdown"
+import ActiveCampaignForm from "../components/ac-form"
 
 const Background = styled.div`
   background-color: #000000;
@@ -29,7 +30,8 @@ class discount extends Component {
         <Discount>
           <span>10% Discount</span> sichern noch
         </Discount>
-        <Countdown />
+        <ActiveCampaignForm />
+        {/*  <Countdown /> */}
       </Background>
     )
   }

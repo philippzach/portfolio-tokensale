@@ -1,5 +1,5 @@
 import React from "react"
-import Logo from "../../images/logo-white.svg"
+import Logo from "../../images/tokeninverse.svg"
 import { Link } from "gatsby"
 import styles from "./navigation.module.css"
 
@@ -9,8 +9,8 @@ const LogoNav = props => (
       <img
         className={styles.logo}
         src={Logo}
-        alt="ELoop Carsharing Logo"
-        width="105px"
+        alt="ELoop One Token Logo"
+        width="55px"
       />
     </Link>
   </div>

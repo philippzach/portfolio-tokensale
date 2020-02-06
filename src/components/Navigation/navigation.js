@@ -8,9 +8,9 @@ import { Location } from "@reach/router"
 //import BigScreen from '../Container/containerbigscreen';
 
 import "./mobile.css"
-import Burger from "./mobilemenu-off.svg"
-import Appstore from "./appstore.svg"
-import Playstore from "./playstore.svg"
+//import Burger from "./mobilemenu-off.svg"
+//import Appstore from "./appstore.svg"
+//import Playstore from "./playstore.svg"
 
 class Navigation extends Component {
   constructor(props, context) {
@@ -35,7 +35,7 @@ class Navigation extends Component {
         <nav className={styles.navbar}>
           <Logo lang="de" />
           <ul className={styles.navlist}>
-            <li className={styles.navlink}>
+            {/*    <li className={styles.navlink}>
               <Link
                 id="menu-faq"
                 className={styles.links}
@@ -66,21 +66,21 @@ class Navigation extends Component {
               >
                 Token kaufen
               </a>
-            </li>
+            </li> */}
             <li className={styles.navlink}>
-              <Link
+              <a
                 id="menu-faq"
                 className={styles.links}
-                to="/de/frequently-asked-questions"
+                href="https://eloop.dashboard.testnet-0bsnetwork.com/"
                 activeClassName={styles.activenav}
               >
                 <span className={styles.spanner}>Login</span>
-              </Link>
+              </a>
             </li>
 
             <div className="sl-nav">
               <ul>
-                <li>
+                <li style={{ color: "white" }}>
                   <Location>
                     {({ location }) => {
                       let Url = location.pathname.substring(3)
@@ -167,15 +167,15 @@ class Navigation extends Component {
               </ul>
             </div>
           </ul>
-          <div
+          {/*   <div
             role="button"
             className={styles.mobileburger}
             onClick={() => this.handleMouseDown()}
           >
             <img src={Burger} alt="burger menu" style={{ display: "flex" }} />
-          </div>
+          </div> */}
         </nav>
-        <div
+        {/*  <div
           id="MobileMenu"
           className={"menu" + this.state.sidebarOpen}
           onClick={() => this.handleMouseDown()}
@@ -340,7 +340,7 @@ class Navigation extends Component {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
       </main>
     )
   }
